@@ -85,7 +85,8 @@ while(video_capture.isOpened()):
         movementsNumPerFrame = movementsNumPerFrame + 1
 
         # Taking the middle of the movement.
-        movment_location = (x + int(w/2), y + int(h/2))
+        # movment_location = (x + int(w/2), y + int(h/2))
+        movment_location2 = (x + int(w/2), int(h))
         
         PositionDetected['Lat'] = x + int(w/2)
         PositionDetected['Lng'] = y + int(h/2)
